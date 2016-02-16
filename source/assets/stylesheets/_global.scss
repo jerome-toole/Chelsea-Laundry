@@ -1,0 +1,75 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  color: $dark-gray;
+}
+
+.splash {
+  align-items: center;
+  height: 100%;
+  @include row;
+  padding: 0.5em;
+
+  .container {
+    display: block;
+  }
+  .container.text {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    display: block;
+    width: 90%;
+    max-width: 17em;
+    margin: auto;
+    height: auto;
+    margin-bottom: 3em;
+  }
+  h2 {
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1;
+    color: $blue;
+  }
+  p {
+    color: $bluegrey;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  @include media(20em) {
+    padding: 1.5em;
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+  @include media(30em) {
+    padding: 2em;
+    h2 {
+      font-size: 1.8em;
+    }
+  }
+  @include media(45em) {
+    padding: 2.5em;
+    .container {
+      height: 100%;
+      @include span-columns(6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    img {
+      max-width: 20em;
+    }
+  }
+  @include media(50em) {
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
