@@ -32,12 +32,13 @@ body {
     font-size: 1em;
     font-weight: 200;
     line-height: 1;
-    color: $blue;
+    color: black;
   }
   p {
-    color: $bluegrey;
-    font-size: 1.1em;
+    color: black;
+    font-size: 1.6em;
     line-height: 1.2;
+    text-align: center;
   }
   @include media(20em) {
     padding: 1.5em;
